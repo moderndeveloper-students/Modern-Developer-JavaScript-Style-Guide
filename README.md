@@ -5,7 +5,7 @@ Or how to write JavaScript (and, by extension, similar programming languages) to
 ## Table of Contents
 
 1. [Indentation](#indentation)
-1. [Line Length](#line-length)
+1. [Line length](#line-length)
 1. [Naming](#naming)
 1. [Spacing](#spacing)
 1. [Curly braces { }](#curly-braces--)
