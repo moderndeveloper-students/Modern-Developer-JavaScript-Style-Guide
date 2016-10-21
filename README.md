@@ -5,6 +5,7 @@ Or how to write JavaScript (and, by extension, similar programming languages) to
 ## Table of Contents
 
 1. [Indentation](#indentation)
+1. [Line Length](#line-length)
 1. [Naming](#naming)
 1. [Spacing](#spacing)
 1. [Curly braces { }](#curly-braces--)
@@ -36,7 +37,21 @@ function addition(max) {
 ••return sum;
 }
 ```
+## Line length
 
+* The maximum line length should be 80 characters. If the line goes beyond that limit, you can wrap the line immediately after an operator, such as +, -, &&, ||, comma, etc. Vertically align the next line with the items that were interrupted.
+
+```js
+function setPreferences( preference1, preference2, preference3, preference4,
+                         preference5, preference6 ) {
+    var default = 1;
+
+    if (preference1 === 1 && preference2 > 0 && preference3 < preference4 &&
+        preference5 < preference6) {
+        // Do something
+    }
+}
+```
 ## Naming
 
 * Use `camelCase` for variable, function, and parameter names. [More info](http://c2.com/cgi/wiki?CamelCase)
