@@ -19,6 +19,7 @@ Or how to write JavaScript (and, by extension, similar programming languages) to
 1. [Code organization](#code-organization)
 1. [Break, continue, and return statements](#break-continue-and-return-statements)
 1. [Looping array elements and object properties](#looping-array-elements-and-object-properties)
+1. [Strict Mode](#strict-mode)
 1. [`.editorconfig` file](#editorconfig-file)
 
 ## Indentation
@@ -455,6 +456,60 @@ for (var prop in person) {
 ```
 
 * Do not iterate over array objects using the `for-in` construct, because arrays may have more properties than just their indexes.
+
+## Strict mode
+
+`"use strict";`
+
+* The directive has been introduced by JavaScript 1.8.5 (ECMAScript version 5) and allows you to improve the overall quality of your code by avoiding minor errors like the use of undeclared variables. *Strict mode* helps us to make our code more "secure" by limiting the number of expressions considered as "bad syntax".
+
+* Since it is not a *statement*, but a *literal expression*, it will be ignored by earlier versions of JavaScript.
+
+
+* Place the directive at the beginning of a script
+
+```js
+
+// content of my_script.js
+
+"use strict";
+
+var myMath = (function() {
+
+  var add = function add(x, y) {
+
+    var result;
+
+    if (y != null) {
+      result = x + y;
+    } else {
+      result = x + 1;
+    }
+    
+    return result;
+  }
+
+  return { add: add };
+})();
+```
+
+ * or at beginning of a function
+
+```js
+function add(x, y) {
+  "use strict";
+
+  var result;
+
+  if (y != null) {
+    result = x + y;
+  } else {
+    result = x + 1;
+  }
+  
+  return result;
+}
+```
 
 ## `.editorconfig` file
 
