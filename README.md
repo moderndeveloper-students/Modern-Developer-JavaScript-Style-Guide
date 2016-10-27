@@ -459,57 +459,25 @@ for (var prop in person) {
 
 ## Strict mode
 
-`"use strict";`
+This directive allows you to improve the overall quality of your code by avoiding minor errors like the use of undeclared variables. 
 
-* The directive has been introduced by JavaScript 1.8.5 (ECMAScript version 5) and allows you to improve the overall quality of your code by avoiding minor errors like the use of undeclared variables. *Strict mode* helps us to make our code more "secure" by limiting the number of expressions considered as "bad syntax".
-
-* Since it is not a *statement*, but a *literal expression*, it will be ignored by earlier versions of JavaScript.
-
-
-* Place the directive at the beginning of a script
+* The first line of code of every file should be `"use strict";`.
+* The strict mode directive should be followed by a blank line.
 
 ```js
 
-// content of my_script.js
+// content of my_module.js
 
 "use strict";
 
-var myMath = (function() {
-
-  var add = function add(x, y) {
-
-    var result;
-
-    if (y != null) {
-      result = x + y;
-    } else {
-      result = x + 1;
-    }
-    
-    return result;
-  }
-
-  return { add: add };
+var myModule = (function() {
+  
+  // module content
+  
 })();
 ```
 
- * or at beginning of a function
-
-```js
-function add(x, y) {
-  "use strict";
-
-  var result;
-
-  if (y != null) {
-    result = x + y;
-  } else {
-    result = x + 1;
-  }
-  
-  return result;
-}
-```
+* Find more information about this directive here: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode
 
 ## `.editorconfig` file
 
