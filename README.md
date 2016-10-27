@@ -461,14 +461,14 @@ for (var prop in person) {
 
 This directive allows you to improve the overall quality of your code by avoiding minor errors like the use of undeclared variables. 
 
-* The first line of code of every file should be `"use strict";`.
+* The first line of code of every file should be `'use strict';`.
 * The strict mode directive should be followed by a blank line.
 
 ```js
 
 // content of my_module.js
 
-"use strict";
+'use strict';
 
 var myModule = (function() {
   
