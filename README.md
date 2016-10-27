@@ -19,6 +19,7 @@ Or how to write JavaScript (and, by extension, similar programming languages) to
 1. [Code organization](#code-organization)
 1. [Break, continue, and return statements](#break-continue-and-return-statements)
 1. [Looping array elements and object properties](#looping-array-elements-and-object-properties)
+1. [Strict Mode](#strict-mode)
 1. [`.editorconfig` file](#editorconfig-file)
 
 ## Indentation
@@ -455,6 +456,28 @@ for (var prop in person) {
 ```
 
 * Do not iterate over array objects using the `for-in` construct, because arrays may have more properties than just their indexes.
+
+## Strict mode
+
+This directive allows you to improve the overall quality of your code by avoiding minor errors like the use of undeclared variables. 
+
+* The first line of code of every file should be `"use strict";`.
+* The strict mode directive should be followed by a blank line.
+
+```js
+
+// content of my_module.js
+
+"use strict";
+
+var myModule = (function() {
+  
+  // module content
+  
+})();
+```
+
+* Find more information about this directive here: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode
 
 ## `.editorconfig` file
 
