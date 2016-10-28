@@ -287,6 +287,9 @@ var print = function print(message) {
 
 ## Comments
 
+* Use *single* line comments for brief hints (2 or 3 lines at most)
+* Use *multi-line* comments every time you want to explain a complicated algorithm or piece of logic
+
 ### FIXME and TODO
 
 * Use `// FIXME:` to highlight problems, and `// TODO:` to highlight solutions or future additions:
