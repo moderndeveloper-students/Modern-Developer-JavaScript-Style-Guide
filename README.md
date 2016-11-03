@@ -5,22 +5,22 @@ Or how to write JavaScript (and, by extension, similar programming languages) to
 ## Table of Contents
 
 1. [Indentation](#indentation)
-1. [Line length](#line-length)
-1. [Naming](#naming)
-1. [Spacing](#spacing)
-1. [Curly braces { }](#curly-braces--)
-1. [Compound assignment operators and Unary operators](#compound-assignment-operators-and-unary-operators)
-1. [Comparisons](#comparisons)
-1. [Quotes](#quotes)
-1. [Properties](#properties)
-1. [Variable declarations](#variable-declarations)
-1. [Functions](#functions)
-1. [Comments](#comments)
-1. [Code organization](#code-organization)
-1. [Break, continue, and return statements](#break-continue-and-return-statements)
-1. [Looping array elements and object properties](#looping-array-elements-and-object-properties)
-1. [Strict Mode](#strict-mode)
-1. [`.editorconfig` file](#editorconfig-file)
+2. [Line length](#line-length)
+3. [Naming](#naming)
+4. [Spacing](#spacing)
+5. [Curly braces { }](#curly-braces--)
+6. [Compound assignment operators and Unary operators](#compound-assignment-operators-and-unary-operators)
+7. [Comparisons](#comparisons)
+8. [Quotes](#quotes)
+9. [Properties](#properties)
+10. [Variable declarations](#variable-declarations)
+11. [Functions](#functions)
+12. [Comments](#comments)
+13. [Code organization](#code-organization)
+14. [Break, continue, and return statements](#break-continue-and-return-statements)
+15. [Looping array elements and object properties](#looping-array-elements-and-object-properties)
+16. [Strict Mode](#strict-mode)
+17. [`.editorconfig` file](#editorconfig-file)
 
 ## Indentation
 
@@ -372,7 +372,7 @@ function build(messages) {
 
 ## Break, continue, and return statements
 
-* Avoid `break` and `continue` statements. All algorithms can be written without these statements.
+* Avoid `break` and `continue` statements. All algorithms can be written without these statements. An exception to this guideline is that `break` can be used in `switch` statements.
 * Write as less `return` (exit points) statements as possible. Ideally one `return` at the end of the function would be perfect.
 
 ```js
@@ -428,8 +428,6 @@ function isPalindrome(word) {
 }
 ```
 
-* `break` can be used in `switch` statements.
-
 ## Looping array elements and object properties
 
 * When looping over array elements, use this construct:
@@ -441,7 +439,7 @@ for (var i = 0; i < arr.length; i++) {
   console.log(arr[i]);
   // ...
 }
-``` 
+```
 
 * When looping over object properties, use this construct:
 
