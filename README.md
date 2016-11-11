@@ -3,7 +3,6 @@
 Or how to write JavaScript (and, by extension, similar programming languages) to make your life easier and other's too.
 
 ## Table of Contents
-
 1. [Indentation](#indentation)
 1. [Line length](#line-length)
 1. [Naming](#naming)
@@ -372,7 +371,7 @@ function build(messages) {
 
 ## Break, continue, and return statements
 
-* Avoid `break` and `continue` statements. All algorithms can be written without these statements.
+* Avoid `break` and `continue` statements. All algorithms can be written without these statements. An exception to this guideline is that `break` can be used in `switch` statements.
 * Write as less `return` (exit points) statements as possible. Ideally one `return` at the end of the function would be perfect.
 
 ```js
@@ -428,8 +427,6 @@ function isPalindrome(word) {
 }
 ```
 
-* `break` can be used in `switch` statements.
-
 ## Looping array elements and object properties
 
 * When looping over array elements, use this construct:
@@ -441,7 +438,7 @@ for (var i = 0; i < arr.length; i++) {
   console.log(arr[i]);
   // ...
 }
-``` 
+```
 
 * When looping over object properties, use this construct:
 
