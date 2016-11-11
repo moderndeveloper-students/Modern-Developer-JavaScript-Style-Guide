@@ -4,37 +4,21 @@ Or how to write JavaScript (and, by extension, similar programming languages) to
 
 ## Table of Contents
 1. [Indentation](#indentation)
-
 1. [Line length](#line-length)
-
 1. [Naming](#naming)
-
 1. [Spacing](#spacing)
-
 1. [Curly braces { }](#curly-braces--)
-
 1. [Compound assignment operators and Unary operators](#compound-assignment-operators-and-unary-operators)
-
 1. [Comparisons](#comparisons)
-
 1. [Quotes](#quotes)
-
 1. [Properties](#properties)
-
 1. [Variable declarations](#variable-declarations)
-
 1. [Functions](#functions)
-
 1. [Comments](#comments)
-
 1. [Code organization](#code-organization)
-
 1. [Break, continue, and return statements](#break-continue-and-return-statements)
-
 1. [Looping array elements and object properties](#looping-array-elements-and-object-properties)
-
 1. [Strict Mode](#strict-mode)
-
 1. [`.editorconfig` file](#editorconfig-file)
 
 ## Indentation
