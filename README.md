@@ -7,6 +7,7 @@ Or how to write JavaScript (and, by extension, similar programming languages) to
 1. [Line length](#line-length)
 1. [Naming](#naming)
 1. [Spacing](#spacing)
+1. [Semicolons](#semicolons)
 1. [Curly braces { }](#curly-braces--)
 1. [Compound assignment operators and Unary operators](#compound-assignment-operators-and-unary-operators)
 1. [Comparisons](#comparisons)
@@ -105,6 +106,17 @@ function func(x) {
   }
   
   return y;
+}
+```
+
+## Semicolons
+
+* Always use semicolons at the end of statements.
+
+```js
+function() {
+    var secretIdentity = 'Bruce Wayne';
+    return secretIdentity;
 }
 ```
 
