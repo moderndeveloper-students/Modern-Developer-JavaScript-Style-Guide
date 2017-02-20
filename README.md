@@ -474,7 +474,7 @@ function isPalindrome(word) {
 ```js
 var arr = [0,1,2,3,4];
 
-for (var i = 0; i < arr.length; i++) {
+for (var i = 0, l = arr.length; i < l; i++) { 
   console.log(arr[i]);
   // ...
 }
