@@ -111,13 +111,41 @@ function func(x) {
 
 ## Semicolons
 
-* Always use semicolons at the end of statements.
+* Always use semicolons at the end of statements. Please note that semicolons in JavaScript are not statement terminators but statement separators.
 
 ```js
-function() {
-    var secretIdentity = 'Bruce Wayne';
-    return secretIdentity;
+function isBatman(identity) {
+  var result = false;
+
+  if (identity === 'Bruce Wayne') {
+    result = true;
+  }
+
+  return result;
 }
+```
+
+* As an example, this is a situation in which the lack of semicolons could produce unfortunate results:
+
+```js
+var fn = function () {
+  // ...
+} // semicolon missing at this line
+
+// then an IIFE
+(function () {
+    // ...
+})();
+```
+
+The IIFE would be treated as a parameter for the first function:
+
+```js
+var fn = function () {
+    // ...
+}(function () {
+    // ...
+})();
 ```
 
 ## Curly braces { }
