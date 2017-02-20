@@ -7,6 +7,7 @@ Or how to write JavaScript (and, by extension, similar programming languages) to
 1. [Line length](#line-length)
 1. [Naming](#naming)
 1. [Spacing](#spacing)
+1. [Semicolons](#semicolons)
 1. [Curly braces { }](#curly-braces--)
 1. [Compound assignment operators and Unary operators](#compound-assignment-operators-and-unary-operators)
 1. [Comparisons](#comparisons)
@@ -106,6 +107,45 @@ function func(x) {
   
   return y;
 }
+```
+
+## Semicolons
+
+* Always use semicolons at the end of statements. Please note that semicolons in JavaScript are not statement terminators but statement separators.
+
+```js
+function isBatman(identity) {
+  var result = false;
+
+  if (identity === 'Bruce Wayne') {
+    result = true;
+  }
+
+  return result;
+}
+```
+
+* As an example, this is a situation in which the lack of semicolons could produce unfortunate results:
+
+```js
+var fn = function () {
+  // ...
+} // semicolon missing at this line
+
+// then an IIFE
+(function () {
+    // ...
+})();
+```
+
+The IIFE would be treated as a parameter for the first function:
+
+```js
+var fn = function () {
+    // ...
+}(function () {
+    // ...
+})();
 ```
 
 ## Curly braces { }
