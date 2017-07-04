@@ -307,6 +307,46 @@ function intersection(array1, array2) {
   return result;
 }
 ```
+###Single var pattern
+If you prefer to use a single `var` statement to declare more than one variable at once, it may be helpful to group variable declarations through what they represent, like so:
+
+```js
+function intersection(array1, array2) {
+  var result = [];
+  var length1 = array1.length, // Threshold value
+      length2 = array2.length; // Threshold value
+  var i,  // Counter
+      j;  // Counter
+  
+  for (i = 0; i < length1; i++) {
+    for (j = 0; j < length2; j++) {
+      if (array1[i] === array2[j]) {
+        result.push(array1[i]);
+      }
+    }
+  }
+  
+  return result;
+}
+```
+
+Or like in the following example:
+
+```js
+(function () {
+  var win = window,
+      doc = document;
+
+  var screenX  = win.screenX,
+      screenY  = win.screenY,
+      hasTouch = doc.documentElement.ontouchstart !== "undefined";
+  
+// ...
+
+})();
+```
+
+
 
 ## Functions
 
